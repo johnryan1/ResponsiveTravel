@@ -2,29 +2,97 @@
 @font-face {
   font-family: serif;
 }
-/* */
+/*
+Name: John Ryan
+Date: July 2021
+File: styles.css
+*/
 
 /*Main*/
+body {
+  background-image: url(nature.jpg);
+  background-size: cover;
+}
 .container {
+  background: rgba(005,005,005, 0.4);
+  color: white;
   margin: auto;
   width: 75%;
   padding: 5px;
-}
+  text-align: center;
+  overflow:auto;
 
-/*Nav*/
-img {
+}
+.container img {
   display:block;
+  margin: auto;
   width: 128px;
 }
+br {
+  display: none;
+}
+/*Nav*/
+
+
 @media screen and  (min-width:680px) {
- img {
+ .container img {
    display: block;
    width: 256px;
  }
 }
 @media screen and  (min-width:1280px) {
- img {
-   display: block;
-   width: 512px;
+  .container img{
+    width:512px;
+  }
+  br{
+    display: block;
+  }
+  .container {
+    background: rgba(005,005,005, 0.4);
+
+  }
+  .column1 {
+    text-align: left;
+    float: left;
+    margin: 16px;
+  }
+
+ .column1 img{
+   float: left;
+   margin-right: 16px;
+
  }
+ .column1 p {
+
+ }
+
+ .column2  {
+   text-align: right;
+   float: right;
+   margin: 16px;
+ }
+
+ .column2 img {
+   float: right;
+   margin-left: 16px;
+
+ }
+ .column2 p {
+
+ }
+ .column3  {
+   text-align: left;
+   float: left;
+   margin: 16px;
+ }
+
+ .column3 img {
+   float: left;
+   margin-right: 16px;
+ }
+ .column3 p {
+
+ }
+
+
 }
